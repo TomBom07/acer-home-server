@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1220">
+  <meta name="description" content="Privacy policy for Acer Home Server's personal Google Drive backup utility.">
+  <title>Privacy Policy — Acer Home Server</title>
+  <style>
+    :root { color-scheme: dark; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, system-ui, sans-serif; }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; background: #0b1220; color: #e9eef8; }
+    .wrap { max-width: 760px; margin: 0 auto; padding: 36px 24px 64px; }
+    nav, footer { display:flex; justify-content:space-between; align-items:center; gap:16px; flex-wrap:wrap; }
+    a { color: #99c6ff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .brand { color: #e9eef8; font-weight: 700; }
+    header { margin: 78px 0 42px; }
+    h1 { font-size: clamp(38px,7vw,54px); letter-spacing: -.045em; line-height: 1.1; margin: 0 0 14px; }
+    .subtitle, .date { color: #a9bad0; }
+    main section { margin: 30px 0; }
+    h2 { font-size: 20px; margin: 0 0 10px; }
+    p, li { color: #b8c6d9; line-height: 1.8; font-size: 16px; }
+    ul { padding-left: 23px; }
+    .notice { background: #13243a; border: 1px solid #2f4561; border-radius: 14px; padding: 16px 20px; }
+    footer { border-top: 1px solid #2a3a51; margin-top: 64px; padding-top: 24px; color: #8ca0b9; font-size: 14px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <nav><a class="brand" href="./">Acer Home Server</a><a href="./">Home</a></nav>
+    <header>
+      <h1>Privacy Policy</h1>
+      <p class="subtitle">How my personal Google Drive–to–Nextcloud backup utility handles data.</p>
+      <p class="date">Last updated: 2 November 2026</p>
+    </header>
+    <main>
+      <section class="notice">
+        <strong>In short</strong>
+        <p>This is a private utility used by its owner, not a publicly offered service. It uses read-only Google Drive access to copy the owner's GoodNotes backups to the owner's self-hosted Nextcloud.</p>
+      </section>
+      <section>
+        <h2>Google data accessed</h2>
+        <p>The utility requests the Google Drive read-only permission (<code>drive.readonly</code>). This permission allows it to list and download files and their metadata, but not modify or delete files in Google Drive. The configured backup job copies files from the owner's <code>GoodNotes</code> folder.</p>
+      </section>
+      <section>
+        <h2>How data is used</h2>
+        <p>Files are accessed solely to make a personal backup on a Nextcloud instance controlled by the owner. This app does not sell data, use Drive contents for advertising, or disclose Drive files to other users. The backup is not made publicly accessible by this website.</p>
+      </section>
+      <section>
+        <h2>Where data and credentials are stored</h2>
+        <p>The backup process runs on the owner's Acer Ubuntu server. Downloaded file copies are stored in the owner's Nextcloud account. OAuth tokens and app credentials are kept in the owner's local Rclone configuration and are not intentionally published on this site.</p>
+      </section>
+      <section>
+        <h2>Retention and deletion</h2>
+        <p>Copied files stay in the owner's Nextcloud storage until the owner removes them. The owner controls the backup schedule and can delete copies or stop the utility at any time. The owner can also revoke Google Drive access in Google Account settings.</p>
+      </section>
+      <section>
+        <h2>This website</h2>
+        <p>These pages are static and include no first-party analytics, tracking scripts, account sign-up, or data-collection forms. GitHub Pages hosts the public informational site and may process technical access data under its own policies; it does not host the personal GoodNotes backups.</p>
+      </section>
+      <section>
+        <h2>Contact</h2>
+        <p>For questions about this personal utility, contact the repository owner through <a href="https://github.com/TomBom07">their GitHub profile</a>.</p>
+      </section>
+    </main>
+    <footer><span>Acer Home Server · Personal use</span><a href="./">Return home</a></footer>
+  </div>
+</body>
+</html>
