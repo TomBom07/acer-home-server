@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1220">
+  <meta name="description" content="Acer Home Server: private read-only Google Drive to Nextcloud backups.">
+  <title>Acer Home Server — Personal Backup Utility</title>
+  <style>
+    :root { color-scheme: dark; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, system-ui, sans-serif; }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; background: radial-gradient(ellipse at 70% 0%, #162b48 0%, #0b1220 48%, #080e19 100%); color: #e9eef8; }
+    .wrap { max-width: 780px; margin: 0 auto; padding: 36px 24px 60px; }
+    nav, footer { display: flex; justify-content: space-between; align-items: center; gap: 20px; flex-wrap: wrap; }
+    .brand { font-weight: 700; letter-spacing: -.025em; }
+    nav a, footer a, .details a { color: #99c6ff; text-decoration: none; }
+    nav a:hover, footer a:hover, .details a:hover { text-decoration: underline; }
+    main { padding-top: clamp(66px, 12vw, 130px); }
+    .eyebrow { display: inline-flex; padding: 7px 11px; font-size: 12px; font-weight: 650; border: 1px solid #3b506b; border-radius: 999px; color: #a8c8ee; background: #1b2c43; }
+    h1 { font-size: clamp(42px, 8vw, 68px); line-height: 1.05; letter-spacing: -.055em; margin: 22px 0 20px; }
+    .lead { max-width: 600px; font-size: 18px; line-height: 1.7; color: #b2c1d6; }
+    .panel { margin-top: 38px; padding: 28px; border-radius: 18px; border: 1px solid #2b3c55; background: #101d30cb; }
+    .steps { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; font-weight: 600; }
+    .step { background: #1c304b; border: 1px solid #344b68; padding: 11px 13px; border-radius: 11px; }
+    .arrow { color: #77a4d9; }
+    h2 { font-size: 20px; margin-top: 0; }
+    p { line-height: 1.7; }
+    .details { color: #b2c1d6; font-size: 15px; }
+    footer { border-top: 1px solid #2a3a51; color: #8ca0b9; margin-top: 84px; padding-top: 24px; font-size: 14px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <nav>
+      <span class="brand">Acer Home Server</span>
+      <a href="./privacy.html">Privacy policy</a>
+    </nav>
+    <main>
+      <span class="eyebrow">PRIVATE • PERSONAL USE</span>
+      <h1>Backups, under my control.</h1>
+      <p class="lead">Acer Home Server is a personal utility that uses Rclone to read my selected Google Drive GoodNotes backup folder and copy its contents to a self-hosted Nextcloud server.</p>
+      <section class="panel" aria-label="Backup workflow">
+        <h2>How it works</h2>
+        <div class="steps">
+          <span class="step">Google Drive</span><span class="arrow" aria-hidden="true">→</span>
+          <span class="step">Rclone on Acer</span><span class="arrow" aria-hidden="true">→</span>
+          <span class="step">Nextcloud</span>
+        </div>
+        <p class="details">Read-only Google Drive permission. No public account creation. Files are copied privately to the owner's Nextcloud installation, not served from this website.</p>
+      </section>
+    </main>
+    <footer>
+      <span>Personal backup utility · Not a public service</span>
+      <a href="./privacy.html">Privacy policy</a>
+    </footer>
+  </div>
+</body>
+</html>
